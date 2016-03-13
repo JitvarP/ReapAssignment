@@ -1,6 +1,5 @@
 package com.example.jitvar.reapassignment;
 
-import android.os.AsyncTask;
 import android.os.Bundle;
 import android.support.v4.app.Fragment;
 import android.support.v4.app.FragmentManager;
@@ -8,31 +7,12 @@ import android.support.v4.app.FragmentPagerAdapter;
 import android.support.v4.view.ViewPager;
 import android.support.v7.app.AppCompatActivity;
 import android.support.v7.widget.Toolbar;
-import android.util.Log;
 import android.view.Menu;
 import android.view.MenuItem;
 
-import com.example.jitvar.reapassignment.Controller.BaseController;
-import com.example.jitvar.reapassignment.Core.UCProduct;
 import com.example.jitvar.reapassignment.Database.UCDatabase;
-import com.example.jitvar.reapassignment.WebEntities.WeData;
-import com.example.jitvar.reapassignment.WebEntities.WeProduct;
-import com.example.jitvar.reapassignment.WebEntities.WeRawData;
-import com.google.gson.Gson;
-import com.google.gson.GsonBuilder;
 
 import net.danlew.android.joda.JodaTimeAndroid;
-
-import java.io.BufferedReader;
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
-import java.io.Reader;
-import java.net.HttpURLConnection;
-import java.net.MalformedURLException;
-import java.net.ProtocolException;
-import java.net.URL;
-
 public class MainActivity extends AppCompatActivity {
     private static final int ITEMS = 1;
     private static final String TAG = MainActivity.class.getSimpleName();
