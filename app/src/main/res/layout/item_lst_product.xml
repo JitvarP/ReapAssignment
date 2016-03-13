@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="86dp"
+    android:orientation="horizontal"
+    android:background="@drawable/shadow_view"
+
+    >
+
+    <TextView
+        android:id="@+id/tv_scheme"
+        android:layout_width="86dp"
+        android:layout_height="match_parent"
+        android:text="7+3"
+        android:textSize="24sp"
+        android:textColor="@color/color_FFFFFF"
+        android:background="@drawable/scheme_bg"
+        android:gravity="center"
+
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+        <TextView
+            android:id="@+id/tv_date"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:text="2016-04-04"
+            android:layout_marginRight="16dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_company_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:text="Abbott India Ltd"
+            android:layout_marginLeft="16dp"
+            android:layout_marginBottom="8dp"
+            />
+
+        <TextView
+            android:id="@+id/tv_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="16dp"
+            android:text="ACUVIN 325MG/37.5MG TABLET"
+            android:layout_marginBottom="14dp"
+            android:layout_above="@+id/tv_company_name"
+            />
+
+    </RelativeLayout>
+
+</LinearLayout>
